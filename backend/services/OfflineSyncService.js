@@ -1,4 +1,4 @@
-const FloorPlan = require("../models/FloorPlan");
+const FloorPlan = require("../models/floorPlan");
 const OfflineChange = require("../models/OfflineChange");
 const ConflictResolver = require("./ConflictResolver");
 

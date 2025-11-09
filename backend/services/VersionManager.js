@@ -1,5 +1,5 @@
 const Version = require("../models/Version");
-const FloorPlan = require("../models/FloorPlan");
+const FloorPlan = require("../models/floorPlan");
 
 module.exports = {
   async createVersion(floorPlanId, userId) {
