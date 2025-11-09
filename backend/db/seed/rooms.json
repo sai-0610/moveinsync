@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Conference Room A",
+    "capacity": 10,
+    "floor": 2,
+    "lastUsedWeight": 0
+  },
+  {
+    "name": "Meeting Room B",
+    "capacity": 6,
+    "floor": 1,
+    "lastUsedWeight": 0
+  },
+  {
+    "name": "Executive Room C",
+    "capacity": 15,
+    "floor": 3,
+    "lastUsedWeight": 0
+  }
+]

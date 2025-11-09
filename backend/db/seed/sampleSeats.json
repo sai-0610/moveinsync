@@ -1,0 +1,5 @@
+[
+  { "seatId": "A1", "room": "Conference Room A", "x": 20, "y": 40 },
+  { "seatId": "A2", "room": "Conference Room A", "x": 25, "y": 40 },
+  { "seatId": "B1", "room": "Meeting Room B", "x": 40, "y": 60 }
+]
