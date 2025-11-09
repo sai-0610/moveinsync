@@ -1,0 +1,61 @@
+.uploader-box {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 400px;
+}
+
+.version-item {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.popup {
+  position: fixed;
+  top: 18%;
+  left: 28%;
+  width: 45%;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  z-index: 999;
+}
+
+.room-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  width: 250px;
+  margin: 10px;
+}
+
+.room-card h4 {
+  margin-bottom: 8px;
+}
+
+.suggestion-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 350px;
+}
+
+.btn-secondary {
+  background: #555;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #333;
+}

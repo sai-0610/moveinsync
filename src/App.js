@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages
+import LoginPage from "./pages/LoginPage";
+import AdminDashboard from "./pages/AdminDashboard";
+import FloorPlanPage from "./pages/FloorPlanPage";
+import RoomBookingPage from "./pages/RoomBookingPage";
+
+// Hooks
+import useOfflineSync from "./hooks/useOfflineSync";
+
+// Protected Route Component
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
+  // enable offline-sync globally
+  useOfflineSync();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Public Route */}
+        <Route path="/" element={<LoginPage />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/floor-plan"
+          element={
+            <ProtectedRoute>
+              <FloorPlanPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/book-room"
+          element={
+            <ProtectedRoute>
+              <RoomBookingPage />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
